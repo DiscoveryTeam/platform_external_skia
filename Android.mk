@@ -830,8 +830,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES := libskia_static
 LOCAL_SHARED_LIBRARIES := \
         libcutils
 
-ifeq ($(TARGET_HAVE_QC_PERF),true)
-        LOCAL_WHOLE_STATIC_LIBRARIES += libqc-skia
+ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
+#        LOCAL_WHOLE_STATIC_LIBRARIES += libqc-skia
 endif
 
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
